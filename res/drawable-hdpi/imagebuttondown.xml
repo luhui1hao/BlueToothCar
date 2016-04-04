@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+android:state_pressed="true"
+android:drawable="@drawable/downtrue"
+/>
+<item
+android:state_pressed="true"
+android:drawable="@drawable/downfalse"
+/>
+<!-- 默认时 -->
+<item
+android:drawable="@drawable/downfalse"
+/>
+</selector>

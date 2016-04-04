@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mybluetoothcrl.MainActivity" >
+
+    <Spinner android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner"
+        />
+    
+    <Button
+        android:id="@+id/trumpet"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/imagebuttonbee"
+        android:layout_centerInParent="true"/>
+    
+    <Button
+        android:id="@+id/up"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/imgbuttonup"
+        android:layout_above="@id/trumpet"
+        android:layout_alignLeft="@id/trumpet"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/imagebuttondown"
+        android:layout_below="@id/trumpet"
+        android:layout_alignLeft="@id/trumpet" />
+    
+    <Button
+        android:id="@+id/left"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/imagebuttonleft"
+        android:layout_toLeftOf="@id/trumpet"
+        android:layout_alignTop="@id/trumpet"/>
+    
+    <Button
+        android:id="@+id/right"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/imagebuttonright"
+        android:layout_toRightOf="@id/trumpet"
+        android:layout_alignTop="@id/trumpet" />
+    
+    <Button 
+        android:id="@+id/clear"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/imagebuttonclear"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/down"
+        />
+    
+    <TextView 
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="数据接收区"
+        android:singleLine="false" 
+        android:scrollbars="vertical" 
+        android:background="@drawable/textview_bar"
+        android:layout_below="@id/down"
+        android:text=""/>
+    
+   
+ 
+</RelativeLayout>
